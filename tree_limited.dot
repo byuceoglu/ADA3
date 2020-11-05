@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="SOn_Ceyrek_Fis <= 3.5\ngini = 0.49\nsamples = 63953\nvalue = [36687, 27266]\nclass = Loyal", fillcolor="#e5813941"] ;
+1 [label="SOn_Ceyrek_Fis <= 1.5\ngini = 0.47\nsamples = 35436\nvalue = [13194, 22242]\nclass = Churn", fillcolor="#399de568"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Son_Alisveris <= 84.5\ngini = 0.38\nsamples = 15886\nvalue = [4077, 11809]\nclass = Churn", fillcolor="#399de5a7"] ;
+1 -> 2 ;
+3 [label="gini = 0.42\nsamples = 10035\nvalue = [3007, 7028]\nclass = Churn", fillcolor="#399de592"] ;
+2 -> 3 ;
+4 [label="gini = 0.3\nsamples = 5851\nvalue = [1070, 4781]\nclass = Churn", fillcolor="#399de5c6"] ;
+2 -> 4 ;
+5 [label="Fis_Sayisi <= 4.5\ngini = 0.5\nsamples = 19550\nvalue = [9117, 10433]\nclass = Churn", fillcolor="#399de520"] ;
+1 -> 5 ;
+6 [label="gini = 0.48\nsamples = 11973\nvalue = [4851, 7122]\nclass = Churn", fillcolor="#399de551"] ;
+5 -> 6 ;
+7 [label="gini = 0.49\nsamples = 7577\nvalue = [4266, 3311]\nclass = Loyal", fillcolor="#e5813939"] ;
+5 -> 7 ;
+8 [label="SOn_Ceyrek_Fis <= 6.5\ngini = 0.29\nsamples = 28517\nvalue = [23493, 5024]\nclass = Loyal", fillcolor="#e58139c8"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Son_Alisveris <= 34.5\ngini = 0.41\nsamples = 13496\nvalue = [9637, 3859]\nclass = Loyal", fillcolor="#e5813999"] ;
+8 -> 9 ;
+10 [label="gini = 0.38\nsamples = 11980\nvalue = [8880, 3100]\nclass = Loyal", fillcolor="#e58139a6"] ;
+9 -> 10 ;
+11 [label="gini = 0.5\nsamples = 1516\nvalue = [757, 759]\nclass = Churn", fillcolor="#399de501"] ;
+9 -> 11 ;
+12 [label="Son_Alisveris <= 25.5\ngini = 0.14\nsamples = 15021\nvalue = [13856, 1165]\nclass = Loyal", fillcolor="#e58139ea"] ;
+8 -> 12 ;
+13 [label="gini = 0.12\nsamples = 14420\nvalue = [13488, 932]\nclass = Loyal", fillcolor="#e58139ed"] ;
+12 -> 13 ;
+14 [label="gini = 0.47\nsamples = 601\nvalue = [368, 233]\nclass = Loyal", fillcolor="#e581395e"] ;
+12 -> 14 ;
+}
